@@ -24,7 +24,9 @@ white treats in white bowl
 <a href="https://www.pexels.com/photo/close-up-of-dog-treats-on-a-container-13419673/">Photo by Lana Kravchenko</a>
 
 
-
-
 =================================================================
+link template
 <a href=""></a>
+
+
+Will probably rename the image files to make them easier to use in code
