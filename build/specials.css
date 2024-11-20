@@ -1,0 +1,38 @@
+/* individual page css */
+/* these will be combined into the main.css file for final submission */
+/* this is to prevent anyones css code from being overwritten during production */
+/* the code present currently is for the navbar and footer, please don't edit this code */
+
+/* Color palette link on Coolors.co */
+/* https://coolors.co/111111-343732-281f18-745f4d-66c2d1-ebebeb */
+
+/* CSS HEX variables */
+*{
+  --night: #111111;
+  --black-olive: #343732;
+  --licorice: #281f18;
+  --umber: #745f4d;
+  --sky-blue: #66c2d1;
+  --antiflash-white: #ebebeb;
+}
+
+/* Navbar css */
+.nav-transparent {
+  background-color: transparent;
+}
+.nav-color {
+  background-color: var(--sky-blue);
+}
+#navigation {
+  height: 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Footer css */
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--sky-blue);
+}
