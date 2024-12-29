@@ -16,16 +16,59 @@
   --antiflash-white: #ebebeb;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #343732;
+  scroll-behavior: smooth;
+}
+
 /* Navbar css */
 .nav-transparent {
   background-color: transparent;
+}
+.nav-page {
+  background-color: var(--night);
 }
 .nav-color {
   background-color: var(--sky-blue);
 }
 #navigation {
-  height: 60px;
+  min-height: 60px;
   transition: all 0.3s ease-in-out;
+}
+
+#about {
+  padding: 100px 0;
+  background-color: var(--antiflash-white);
+}
+
+.about{
+	text-align: center;
+	background-color: var(--sky-blue);
+}
+
+.about-heading {
+  font-size: 3rem;
+  font-family: "Alex Brush", cursive;
+  text-align: center;
+}
+
+.mission{
+	text-align: center;
+	background-color: var(--antiflash-white);
+}
+
+.google-map {
+  position: relative;
+  height: 300px;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
 /* Footer css */

@@ -5,6 +5,7 @@
 
 /* Color palette link on Coolors.co */
 /* https://coolors.co/111111-343732-281f18-745f4d-66c2d1-ebebeb */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 /* CSS HEX variables */
 *{
@@ -16,16 +17,193 @@
   --antiflash-white: #ebebeb;
 }
 
-/* Navbar css */
+/* Navbar css - Christopher Johnson*/
 .nav-transparent {
   background-color: transparent;
 }
+
+.nav-page {
+  background-color: var(--night);
+}
+
 .nav-color {
   background-color: var(--sky-blue);
 }
+
 #navigation {
-  height: 60px;
+  min-height: 60px;
   transition: all 0.3s ease-in-out;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--black-olive);
+  background-color: var(--antiflash-white);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.store-header {
+  background-color:var(--antiflash-white); /* White background for header */
+  color: #111111; /* Dark text */
+  padding: 100px 0 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #bcbcbc;
+}
+
+.store-header h1 {
+  font-size: 3rem;
+  font-family: "Alex Brush", cursive;
+  text-align: center;
+}
+
+.store-main {
+  padding-bottom: 50px;
+}
+
+.modal.fade {
+  display: block;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+.modal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Main Store Page Styles */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Card Styles */
+.card {
+  border: 2px solid #dddddd; /* Light border */
+  border-radius: 15px;
+  background-color: #fff; /* White background */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #745F4D; /* Earthy brown */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #7F8C8D; /* Muted gray */
+  margin-bottom: 15px;
+}
+
+.card button {
+  background-color: #745F4D;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #66C2D1; /* Sky blue on hover */
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal-header {
+  background-color: #66C2D1;
+  border-bottom: 2px solid #ddd;
+}
+
+.modal-title {
+  color: #745F4D; /* Earthy brown */
+  font-size: 1.5rem;
+}
+
+.modal-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-body li {
+  font-size: 1rem;
+  color: #7F8C8D;
+}
+
+/* Specials Page Header */
+.specials-header {
+  background: linear-gradient(90deg, #745F4D, #66C2D1);
+  color: #EBEBEB;
+  padding: 50px 15px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.specials-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.specials-header p {
+  font-size: 1.25rem;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--sky-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .store-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+  }
 }
 
 /* Footer css */

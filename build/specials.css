@@ -17,14 +17,18 @@
 }
 
 /* Navbar css */
+/* Navbar css */
 .nav-transparent {
   background-color: transparent;
+}
+.nav-page {
+  background-color: var(--night);
 }
 .nav-color {
   background-color: var(--sky-blue);
 }
 #navigation {
-  height: 60px;
+  min-height: 60px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -35,4 +39,69 @@
   left: 0;
   width: 100%;
   background-color: var(--sky-blue);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #343732;
+  scroll-behavior: smooth;
+}
+
+#specials {
+  padding: 120px 0 40px;
+}
+.specials-heading {
+  font-size: 3rem;
+  font-family: "Alex Brush", cursive;
+  text-align: center;
+}
+
+.hero-section h1,
+.hero-section p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-img-top {
+  height: 250px; /* Ensure all images have the same height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+} 
+
+.card {
+  height: 470px; /* Set all cards to a consistent height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  flex-grow: 1; /* Ensure card body takes up remaining space */
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--sky-blue) !important;
+  transform: translateY(-3px);
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--sky-blue);
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
 }

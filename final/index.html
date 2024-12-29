@@ -1,0 +1,118 @@
+<!-- Group Project Team 7 -->
+<!-- Christopher Johnson -->
+<!-- Crystal Chapman -->
+<!-- Jaden Chapman -->
+<!-- Kenneth Garrison -->
+
+<!-- This Page Coded by Christopher Johnson -->
+<!-- Navbar and Footer on All Pages Coded by Christopher Johnson-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Paw Paw's Bakery</title>
+</head>
+<body>
+  <!-- Navbar Component -->
+  <nav id="navigation" class="navbar navbar-expand-lg fixed-top p-0" data-bs-theme="dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/Logo_Navbar.png" alt="Paw Paw's Bakery" height="80" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-menu" aria-controls="navigation-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navigation-menu" class="collapse navbar-collapse justify-content-end">
+        <ul id="nav-menu" class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="store.html">Store</a></li>
+              <li><a class="dropdown-item" href="specials.html">Specials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  <!-- Main Component -->
+  <main>
+    <!-- Splash Page -->
+    <div id="splash-screen" class="d-flex justify-content-center align-items-center">
+      <div id="splash-logo" class="d-flex justify-content-center">
+        <img id="splash-logo-image" src="images/Logo_large.png" alt="Paw Paw's Bakery Logo">
+      </div>
+      <div id="splash-spacer" class="d-lg-block d-none"></div>
+    </div>
+    <!-- Letter from the Baker -->
+    <div id="letter-screen" class="d-flex justify-content-center align-items-center pt-4 pb-5">
+      <div class="container row">
+        <div class="col-lg-6 col-12">
+          <div id="dogs-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div id="carousel-image-1" class="carousel-image"></div>
+              </div>
+              <div class="carousel-item">
+                <div id="carousel-image-2" class="carousel-image"></div>
+              </div>
+              <div class="carousel-item">
+                <div id="carousel-image-3" class="carousel-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="baker-letter" class="col-lg-6 col-12 p-3">
+          <div class="letter-container">
+            <div class="letter-section">Hello fellow pet lovers!</div>
+            <div class="letter-section">At Paw Paw's Bakery, we believe our furry friends deserve treats as delightful and special as they are. That’s why we bake fresh, wholesome, and tail-waggingly delicious goodies for dogs and cats alike. Using only pet-safe, high-quality ingredients, we create treats that you can feel good about sharing with your four-legged family members.</div>
+            <div class="letter-section">Thank you for stopping by – we can’t wait to make your pet’s day a little sweeter!</div>
+            <div class="letter-section">
+              <div>With love,</div>
+              <div>Paw Paw</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container d-flex justify-content-end">
+      PawPaw's Bakery &copy; 2024
+    </div>
+  </footer>
+  <!-- Bootstrap 5.3.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Navbar Scrolled Background Color-->
+  <script>
+    const nav = document.getElementById('navigation');
+    window.onscroll = function () {
+      if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+        nav.classList.add("nav-color");
+        nav.classList.remove("nav-transparent");
+        nav.setAttribute("data-bs-theme", "light")
+      } else {
+        nav.classList.add("nav-transparent");
+        nav.classList.remove("nav-color");
+        nav.setAttribute("data-bs-theme", "dark")
+      }
+    }
+  </script>
+</body>
+</html>

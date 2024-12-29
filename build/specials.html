@@ -3,6 +3,7 @@
 <!-- Crystal Chapman -->
 <!-- Jaden Chapman -->
 <!-- Kenneth Garrison -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +11,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap 5.3.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- page specific css file will be replaced at final submission: see notes in css file -->
-  <link rel="stylesheet" href="specials.css">
-  <title>Paw Paw's Bakery</title>
+  <link rel="stylesheet" href="main.css">
+  <title>Paw Paw's Bakery - Specials</title>
 </head>
 <body>
   <!-- Navbar Component -->
-  <!-- Navbar: bg-body class added so you can see the content -->
-  <!-- Navbar: is set-up to be transparent until scrolled -->
-  <!-- Navbar: this is if you want a background color or image for the page -->
-  <!-- Navbar: if not we can leave the bg-body on your page so that there is always a background -->
-  <!-- Navbar: or I will just remove the scroll script on your page so that the sky-blue background -->
-  <!-- Navbar: is always present -->
-  <nav id="navigation" class="navbar navbar-expand-lg fixed-top bg-body p-0" data-bs-theme="dark">
+  <nav id="navigation" class="navbar navbar-expand-lg fixed-top p-0 nav-page" data-bs-theme="dark">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="images/Logo_Navbar.png" alt="Paw Paw's Bakery" height="80px" >
+        <img src="images/Logo_Navbar.png" alt="Paw Paw's Bakery" height="80" >
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-menu" aria-controls="navigation-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,35 +44,151 @@
           </li>
         </ul>
       </div>
-      
     </div>
   </nav>
-  <!-- Main Component -->
-  <main>
-    <!-- Main Content Area -->
 
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Specials Section -->
+    <section id="specials">
+      <h1 class="specials-heading text-center mb-5 display-4">This Week's Specials</h1>
+      <div class="row g-4">
+        <!-- Special 1 -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm hover-scale">
+            <img src="https://anchoredbaking.com/wp-content/uploads/2020/10/10800892896_IMG_2257-scaled.jpg" class="card-img-top rounded-top" alt="Seasonal Pumpkin Paws">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Seasonal Pumpkin Paws</h5>
+              <p class="card-text">A perfect fall treat with pumpkin, cinnamon, and a touch of honey.</p>
+              <ul class="list-unstyled mb-3">
+                <li><strong>Nutrition:</strong> 120 kcal per treat</li>
+                <li><strong>Ingredients:</strong> Pumpkin, cinnamon, honey</li>
+              </ul>
+              <p class="card-text">3 for $4.99 or 6 for $7.99</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pumpkinModal">More Info</button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Special 2 -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm hover-scale">
+            <img src="https://www.thecookierookie.com/wp-content/uploads/2013/12/dog-treat-recipe-7.jpg" class="card-img-top rounded-top" alt="Peanut Butter Biscuits">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Peanut Butter Biscuits</h5>
+              <p class="card-text">Classic peanut butter biscuits full of protein and flavor.</p>
+              <ul class="list-unstyled mb-3">
+                <li><strong>Nutrition:</strong> 150 kcal per treat</li>
+                <li><strong>Ingredients:</strong> Peanut butter, oats, egg</li>
+              </ul>
+              <p class="card-text">1 for $2.99 or 2 for $4.99</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#peanutButterModal">More Info</button>
+            </div>
+          </div>
+        </div>
 
-    <!-- Main Content Area -->
+        <!-- Special 3 -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm hover-scale">
+            <img src="https://drooliciousdogtreats.com/wp-content/uploads/2023/07/frozen-apple-carrot-dog-treats-480x270.jpg" class="card-img-top rounded-top" alt="Carrot Crunchies">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Carrot Crunchies</h5>
+              <p class="card-text">Crunchy biscuits made with carrots for a healthy snack.</p>
+              <ul class="list-unstyled mb-3">
+                <li><strong>Nutrition:</strong> 100 kcal per treat</li>
+                <li><strong>Ingredients:</strong> Carrots, whole wheat flour, egg</li>
+              </ul>
+              <p class="card-text">3 for $3.99 or 6 for $6.99</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#carrotCrunchiesModal">More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
   <!-- Footer -->
   <footer id="footer">
     <div class="container d-flex justify-content-end">
       PawPaw's Bakery &copy; 2024
     </div>
   </footer>
-  <!-- Bootstrap 5.3.3 -->
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Modal for Pumpkin Paws -->
+  <div class="modal fade" id="pumpkinModal" tabindex="-1" aria-labelledby="pumpkinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pumpkinModalLabel">Seasonal Pumpkin Paws</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Did You Know?</strong></p>
+          <ul>
+            <li>Pumpkin is rich in fiber and helps aid digestion in dogs.</li>
+            <li>Cinnamon can have anti-inflammatory properties, beneficial for your furry friend's joints.</li>
+            <li>This treat is perfect for the fall season, offering a comforting, natural flavor.</li>
+          </ul>
+          <p>Perfect for autumn walks, these Pumpkin Paws not only taste great but also contribute to your dog's health!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Peanut Butter Biscuits -->
+  <div class="modal fade" id="peanutButterModal" tabindex="-1" aria-labelledby="peanutButterModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="peanutButterModalLabel">Peanut Butter Biscuits</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Did You Know?</strong></p>
+          <ul>
+            <li>Peanut butter is a good source of protein, which helps build and repair muscles.</li>
+            <li>It also contains healthy fats and vitamin E, which are great for your dog's coat and skin.</li>
+            <li>While peanut butter is a healthy snack, it’s important to check for xylitol-free products, as it can be toxic to dogs.</li>
+          </ul>
+          <p>This treat is not only delicious but also a great energy booster for your dog!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Carrot Crunchies -->
+  <div class="modal fade" id="carrotCrunchiesModal" tabindex="-1" aria-labelledby="carrotCrunchiesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="carrotCrunchiesModalLabel">Carrot Crunchies</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Did You Know?</strong></p>
+          <ul>
+            <li>Carrots are rich in beta-carotene, which promotes healthy vision for your dog.</li>
+            <li>They're low in calories, making them a perfect guilt-free snack.</li>
+            <li>Carrots help clean your dog's teeth as they naturally scrape off plaque while chewing.</li>
+          </ul>
+          <p>These crunchy, tasty biscuits provide essential nutrients and help keep your dog's teeth clean!</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Navbar Scrolled Background Color-->
   <script>
     const nav = document.getElementById('navigation');
     window.onscroll = function () {
       if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
         nav.classList.add("nav-color");
-        nav.classList.remove("nav-transparent");
+        nav.classList.remove("nav-page");
         nav.setAttribute("data-bs-theme", "light")
       } else {
-        nav.classList.add("nav-transparent");
+        nav.classList.add("nav-page");
         nav.classList.remove("nav-color");
         nav.setAttribute("data-bs-theme", "dark")
       }
@@ -86,3 +196,4 @@
   </script>
 </body>
 </html>
+

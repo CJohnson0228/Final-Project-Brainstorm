@@ -3,6 +3,9 @@
 <!-- Crystal Chapman -->
 <!-- Jaden Chapman -->
 <!-- Kenneth Garrison -->
+
+<!-- This Page Coded by Crystal Chapman -->
+<!-- Navbar and Footer on All Pages Coded by Christopher Johnson-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +13,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap 5.3.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- page specific css file will be replaced at final submission: see notes in css file -->
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="main.css">
   <title>Paw Paw's Bakery</title>
 </head>
 <body>
   <!-- Navbar Component -->
-  <!-- Navbar: bg-body class added so you can see the content -->
-  <!-- Navbar: is set-up to be transparent until scrolled -->
-  <!-- Navbar: this is if you want a background color or image for the page -->
-  <!-- Navbar: if not we can leave the bg-body on your page so that there is always a background -->
-  <!-- Navbar: or I will just remove the scroll script on your page so that the sky-blue background -->
-  <!-- Navbar: is always present -->
-  <nav id="navigation" class="navbar navbar-expand-lg fixed-top bg-body p-0" data-bs-theme="dark">
+  <nav id="navigation" class="navbar navbar-expand-lg fixed-top p-0 nav-page" data-bs-theme="dark">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="images/Logo_Navbar.png" alt="Paw Paw's Bakery" height="80px" >
+        <img src="images/Logo_Navbar.png" alt="Paw Paw's Bakery" height="80" >
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-menu" aria-controls="navigation-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,11 +50,76 @@
     </div>
   </nav>
   <!-- Main Component -->
-  <main>
+  <main id="about">
+    <div class="container">
     <!-- Main Content Area -->
+    <h1 class="about-heading"> About Us </h1>
+			<hr>
+			<div class="pets">
+				<img class="m-4 img-fluid mx-auto d-block" src="images/pets.jpg" alt= "Cat and Dog">
+			</div>
+		<div class="mission p-4">
+      <h6 class="about-heading"> Our Mission </h6>
+			<p>Welcome to Paw Paw's Bakery! We are excited to provide the community with a professional, dedicated, and caring bakery that is looking forward to providing awesome service for you and your fur baby. Here at Paw Paw's Bakery it is our mission to make sure we are creating treats that are delicious, full of love, and healthy in order to provide a product that you will not have any worries about giving to your pets. We want to make sure that you receive a product that is guaranteed fresh and is made with the finest natural ingredients available. There are no artifical or additives added to our treats that will be harmful to your best friend.</p>
+		</div>
 
-
-
+    <div class="about p-4">
+      <h6 class="about-heading"> What We are all About </h6>
+			<hr>
+			<p>We at Paw Paw's Bakery are a family-owned business that has enjoyed being part of the local community here in Warner Robins for the last two years. We have always had few family cats and dogs that have enriched our lives so we have always been careful about what food and treats they receive. We decided to create a treat that we could control what was being used and making sure that our pets received the best ingredients. We often shared this product with family and friends who told us that our different treats are something that all pet owners should get a chance to experience so we decided to open our business.</p>
+		</div>
+			
+		<div class="mission p-4">	
+      <h6 class="about-heading"> Coming Soon... </h6>
+			<p>We offer many different types of treats for your cats or dogs no matter how big or small, or young or old. We will be bringing our treats to an online store soon that will allow you to receive your favorite treats no matter where you are located. If you look at our shop page you will be able to see our current treats we offer and the prices for those items. We also hope you will sign up for our newsletter so we can keep you updated on important news including when our digital site will go live or just to let you know about any upcoming sales.</p>
+		</div>
+		
+		<div class="about p-4">
+			<p>Please come and visit our local store near Petsmart here in Warner Robins!</p>
+      <table class="table">
+        <thead class="table-dark">
+          <tr><h6 class="fw-bold p-2 mb-0 bg-dark text-light">Store Hours</h6></tr>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sunday</td>
+            <td>11am - 6pm</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>8am - 8pm</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>8am - 8pm</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>8am - 8pm</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>8am - 8pm</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>8am - 8pm</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>11am - 6pm</td>
+          </tr>
+        </tbody>
+      </table>
+			<div class="google-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.525164377578!2d-83.6774584259004!3d32.61883549205576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3e132fd6a4477%3A0x21824f6fd0d862c6!2sPetSmart!5e0!3m2!1sen!2sus!4v1732994469738!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+  </div>
     <!-- Main Content Area -->
   </main>
   <!-- Footer -->
@@ -75,10 +136,10 @@
     window.onscroll = function () {
       if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
         nav.classList.add("nav-color");
-        nav.classList.remove("nav-transparent");
+        nav.classList.remove("nav-page");
         nav.setAttribute("data-bs-theme", "light")
       } else {
-        nav.classList.add("nav-transparent");
+        nav.classList.add("nav-page");
         nav.classList.remove("nav-color");
         nav.setAttribute("data-bs-theme", "dark")
       }
